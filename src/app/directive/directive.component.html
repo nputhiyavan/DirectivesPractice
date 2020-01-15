@@ -18,8 +18,12 @@
       <th>DateTime</th>
     </tr>
     <tr *ngFor = "let log of toggleLog" >
-      <td [ngStyle] = "{backgroundColor: getColor()}">{{log.id}}</td>
-      <td>{{log.timestamp}}</td>
+      <!-- <td *ngIf = "log.id < 5" [ngStyle] = "{backgroundColor: getColor()}">{{log.id}}</td>
+      <td *ngIf = "log.id >= 5" [ngStyle] = "{backgroundColor: getColor()}">{{log.id}}</td>
+      <td *ngIf = "log.id < 5" [ngStyle] = "{backgroundColor: getColor()}">{{log.timestamp}}</td>
+      <td *ngIf = "log.id >= 5" [ngStyle] = "{backgroundColor: getColor()}">{{log.timestamp}}</td>       -->
+      <td [ngClass] = "{'bgRed':log.id >= 4}">{{log.id}}</td>
+      <td [ngClass] = "{'bgRed':log.id >= 4}">{{log.timestamp}}</td>     
     </tr>
   </table>
 </div>
