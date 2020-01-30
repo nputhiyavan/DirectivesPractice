@@ -28,3 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 06 JAN - 2020 - Exercise close to completion, commited changes from VS CODE
 15 JAN - 2020 - Excercise completed.
+29 JAN - 2020 - Event Binding Excercise added.
